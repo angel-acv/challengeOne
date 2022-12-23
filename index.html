@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="resources/reset.css">
+    <link rel="stylesheet" href="resources/stylo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="img/logo alura.svg" alt="Logo Alura"> 
+    </header>
+   <main>
+        <section class="encriptar">
+            <textarea id="introducir-texto" class="textarea" type="mensaje" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                 <div class="alerta">
+                    <p><i class="fa-solid fa-circle-info"></i>Solo letras minúsculas y sin acentos</p>
+                 </div>
+                <div class="btn-conteiner">
+                  <button id="btn1" class="btn1">Encriptar!</button>
+                     <button id="btn2"class="btn2">Desencriptar!</button>
+                 </div>
+        </section>
+        <section class="tablero">
+            <div id="conteiner-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div id="alert-deft" class="conteinerImg">
+                <img src="img/Muñeco.svg" alt="Muñeco">
+                <p  class="text1"><strong>Ningún texto mensaje fue encontrado</strong></p>
+                <p class="text2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea id="resultado" readonly></textarea>
+            <button id="btn-copy" class="btnCopy">Copiar</button>
+           
+        </section>
+</main> 
+<footer>Desarrollado por <a href="https://github.com/zanjel000">Angel Coavas</a>
+</footer>
+
+<script src="resources/js/encriptador.js"></script>
+<script src="resources/js/desencriptador.js"></script>
+<script src="resources/js/copiar.js"></script>
+<script src="https://kit.fontawesome.com/c586ed30f7.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
